@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../../../domain/entities/weather.dart';
 
-final class WeatherRemoteModel extends Equatable {
+class WeatherRemoteModel extends Equatable {
   const WeatherRemoteModel({
     required this.condition,
   });

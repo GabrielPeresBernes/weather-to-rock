@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../domain/entities/weather.dart';
 
-final class WeatherLocalModel extends Equatable {
+class WeatherLocalModel extends Equatable {
   const WeatherLocalModel({
     required this.condition,
     this.date,

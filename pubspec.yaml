@@ -23,8 +23,6 @@ dependencies:
   go_router: 13.0.1
   
   http: 1.2.0
-
-  shimmer: 3.0.0
   
   dartz: 0.10.1
   

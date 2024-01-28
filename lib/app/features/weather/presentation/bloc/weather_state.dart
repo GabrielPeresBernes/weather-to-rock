@@ -7,7 +7,7 @@ enum WeatherStatus {
   notConnected,
 }
 
-final class WeatherState extends Equatable {
+class WeatherState extends Equatable {
   const WeatherState({
     this.status = WeatherStatus.loading,
     this.forecast,

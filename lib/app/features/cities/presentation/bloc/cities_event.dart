@@ -7,7 +7,7 @@ sealed class CitiesEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-final class CitiesGet extends CitiesEvent {
+class CitiesGet extends CitiesEvent {
   const CitiesGet({this.query});
 
   final String? query;

@@ -10,7 +10,7 @@ import '../../domain/usecases/get_cities_usecase.dart';
 part 'cities_event.dart';
 part 'cities_state.dart';
 
-interface class CitiesBloc extends Bloc<CitiesEvent, CitiesState> {
+class CitiesBloc extends Bloc<CitiesEvent, CitiesState> {
   CitiesBloc({
     required GetCitiesUseCase getCities,
     required CoreLocalStorage localStorage,

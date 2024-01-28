@@ -4,7 +4,7 @@ import '../../../domain/entities/forecast.dart';
 import '../../../domain/entities/weather.dart';
 import 'weather_local_model.dart';
 
-interface class ForecastLocalModel extends Equatable {
+class ForecastLocalModel extends Equatable {
   const ForecastLocalModel({
     required this.current,
     required this.futures,

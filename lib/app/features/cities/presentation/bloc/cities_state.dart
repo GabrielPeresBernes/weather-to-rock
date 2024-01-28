@@ -7,7 +7,7 @@ enum CitiesStatus {
   empty,
 }
 
-final class CitiesState extends Equatable {
+class CitiesState extends Equatable {
   const CitiesState({
     this.status = CitiesStatus.loading,
     this.cities = const [],

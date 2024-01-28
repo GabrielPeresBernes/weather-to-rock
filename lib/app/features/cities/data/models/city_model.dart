@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../domain/entities/city.dart';
 
-final class CityModel extends Equatable {
+class CityModel extends Equatable {
   const CityModel({
     required this.slug,
     required this.flag,
