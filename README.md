@@ -41,7 +41,11 @@ Install Project Dependencies:
 flutter pub get
 ```
 
-This command installs all the necessary dependencies for the project.
+Install iOS Dependencies: (MacOS only)
+
+```bash
+  cd ios && pod install --repo-update
+```
 
 Setup Environment:
 
