@@ -1,0 +1,20 @@
+{
+    "cities": [
+        {
+            "slug": "sp",
+            "name": "São Paulo",
+            "country": "Brazil",
+            "flag": "assets/icons/flags/br.svg",
+            "lat": "-23.5506507",
+            "lng": "-46.6333824"
+        },
+        {
+            "slug": "mb",
+            "name": "Melbourne",
+            "country": "Australia",
+            "flag": "assets/icons/flags/au.svg",
+            "lat": "-37.8142176",
+            "lng": "144.9631608"
+        }
+    ]
+}

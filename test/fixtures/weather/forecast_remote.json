@@ -1,0 +1,98 @@
+{
+	"cod": "200",
+	"message": 0,
+	"cnt": 40,
+	"list": [
+		{
+			"dt": 1706454000,
+			"main": {
+				"temp": 296.22,
+				"feels_like": 296.46,
+				"temp_min": 296.22,
+				"temp_max": 297.86,
+				"pressure": 1016,
+				"sea_level": 1016,
+				"grnd_level": 929,
+				"humidity": 72,
+				"temp_kf": -1.64
+			},
+			"weather": [
+				{
+					"id": 500,
+					"main": "Clouds",
+					"description": "light rain",
+					"icon": "10d"
+				}
+			],
+			"clouds": {
+				"all": 78
+			},
+			"wind": {
+				"speed": 0.38,
+				"deg": 189,
+				"gust": 1.73
+			},
+			"visibility": 10000,
+			"pop": 0.58,
+			"rain": {
+				"3h": 0.97
+			},
+			"sys": {
+				"pod": "d"
+			},
+			"dt_txt": "2017-08-23 00:00:00"
+		},
+		{
+			"dt": 1706464800,
+			"main": {
+				"temp": 297.71,
+				"feels_like": 297.81,
+				"temp_min": 297.71,
+				"temp_max": 297.71,
+				"pressure": 1012,
+				"sea_level": 1012,
+				"grnd_level": 927,
+				"humidity": 61,
+				"temp_kf": 0
+			},
+			"weather": [
+				{
+					"id": 500,
+					"main": "Rain",
+					"description": "light rain",
+					"icon": "10d"
+				}
+			],
+			"clouds": {
+				"all": 66
+			},
+			"wind": {
+				"speed": 2.38,
+				"deg": 82,
+				"gust": 3.46
+			},
+			"visibility": 10000,
+			"pop": 0.5,
+			"rain": {
+				"3h": 1.2
+			},
+			"sys": {
+				"pod": "d"
+			},
+			"dt_txt": "2017-08-24 00:00:00"
+		}
+	],
+	"city": {
+		"id": 3458611,
+		"name": "Liberdade",
+		"coord": {
+			"lat": -23.5507,
+			"lon": -46.6334
+		},
+		"country": "BR",
+		"population": 0,
+		"timezone": -10800,
+		"sunrise": 1706431334,
+		"sunset": 1706478978
+	}
+}

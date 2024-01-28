@@ -1,0 +1,34 @@
+{
+  "sp": {
+      "current": {
+        "condition": "Clear",
+        "date": null
+      },
+      "futures": [
+        {
+          "condition": "Clouds",
+          "date": "Aug 23 - 00:00"
+        },
+        {
+          "condition": "Rain",
+          "date": "Aug 24 - 00:00"
+        }
+      ]
+    },
+  "mb": {
+    "current": {
+      "condition": "Snow",
+      "date": null
+    },
+    "futures": [
+      {
+        "condition": "Clear",
+        "date": "Jan 23 - 00:00"
+      },
+      {
+        "condition": "Clear",
+        "date": "Jan 24 - 00:00"
+      }
+    ]
+  }
+}

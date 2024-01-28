@@ -1,0 +1,66 @@
+name: weather_to_rock
+
+description: "Check the weather for rock n' roll"
+
+publish_to: 'none'
+
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # third-party
+  flutter_bloc: 8.1.3
+  
+  flutter_dotenv: 5.1.0
+  
+  get_it: 7.6.7
+  
+  go_router: 13.0.1
+  
+  http: 1.2.0
+
+  shimmer: 3.0.0
+
+  cached_network_image: 3.3.1
+  
+  dartz: 0.10.1
+  
+  equatable: 2.0.5
+
+  flutter_svg_provider: 1.0.7
+  
+  diacritic: 0.1.5
+  
+  intl: 0.19.0
+  
+  shared_preferences: 2.2.2
+
+  connectivity_plus: 5.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+  
+  # third-party
+  flutter_lints: 2.0.0
+
+  mocktail: 1.0.3
+  
+  bloc_test: 9.1.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/flags/
+    - assets/icons/weather/
+    - data/
+    - .env
