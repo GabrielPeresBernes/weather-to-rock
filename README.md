@@ -32,6 +32,7 @@ Operating System: Windows/Linux to test on Android or MacOS to test on iOS.
 Flutter: Version 3.0 or higher.
 
 ## Installation
+
 Follow these steps to set up the project:
 
 Install Project Dependencies:
@@ -52,13 +53,18 @@ Fill in the environment constants. For testing, use:
 API_URL = "https://api.openweathermap.org/data/2.5/"
 API_KEY = "466d33491caccc7eeb2b2bacabf94f0c"
 ```
+
 ## Features
 
-- Real-Time Weather Updates: Get the latest weather updates and forecasts for any city with an internet connection.
+- Real-Time Weather Updates: Get the latest weather updates and forecasts for selected city with an internet connection.
 
 - Offline Access: Save weather data for offline viewing, ensuring access to information even without an internet connection.
 
 - City Search: Easily search for cities by name to find their current weather conditions.
+
+| Search City | Get Weather | Offline Weather |
+| --- | --- | --- |
+| ![untitled3](https://github.com/GabrielPeresBernes/weather-to-rock/assets/20260561/d1e83bd0-7333-495a-b4bf-991a6ed63c53) | ![untitled99](https://github.com/GabrielPeresBernes/weather-to-rock/assets/20260561/366f5173-9864-4ce0-925b-c0b25a590fa2) | ![untitled999](https://github.com/GabrielPeresBernes/weather-to-rock/assets/20260561/935a4a3a-868e-4b2d-ae5f-0a0fe40ace39) |
 
 ## Running the Tests
 
@@ -94,6 +100,8 @@ genhtml coverage/lcov.info -o coverage/html
 
 Open index.html in the coverage directory to view the report.
 
+![2024-01-29_01-12](https://github.com/GabrielPeresBernes/weather-to-rock/assets/20260561/cde853e9-32ef-48de-aa19-78ec1f1e9ba9)
+
 ## Built With
 
 - [Bloc](https://pub.dev/packages/bloc) - State management
@@ -111,4 +119,5 @@ Gabriel Peres Bernes
 For additional questions or comments, feel free to contact me at:
 
 Email: bernes.dev@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/gabriel-peres-bernes/
