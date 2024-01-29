@@ -12,8 +12,37 @@ import '../../utils/cities_utils.dart';
 import '../bloc/cities_bloc.dart';
 import '../constants/cities_screen_constants.dart';
 
-class CitiesScreen extends StatelessWidget {
+class CitiesScreen extends StatefulWidget {
   const CitiesScreen({super.key});
+
+  @override
+  State<CitiesScreen> createState() => _CitiesScreenState();
+}
+
+class _CitiesScreenState extends State<CitiesScreen> {
+  final TextEditingController _controller = TextEditingController();
+
+  final FocusNode _focusNode = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller.addListener(() {
+      if (_controller.text.isEmpty) {
+        _focusNode.unfocus();
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+
+    _focusNode.dispose();
+
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +58,8 @@ class CitiesScreen extends StatelessWidget {
           children: [
             TextField(
               key: const Key('search_city_text_field'),
+              controller: _controller,
+              focusNode: _focusNode,
               decoration: const InputDecoration(
                 labelText: CitiesScreenConstants.searchCityLabel,
                 prefixIcon: Icon(Icons.search),
@@ -90,16 +121,20 @@ class CitiesScreen extends StatelessWidget {
                             ),
                             subtitle: city.country,
                             title: city.name,
-                            onTap: () => context.push(
-                              const WeatherRoute().getLocation(
-                                WeatherRouteParams(
-                                  city: city.name,
-                                  lat: city.lat,
-                                  lng: city.lng,
-                                  slug: city.slug,
+                            onTap: () {
+                              context.push(
+                                const WeatherRoute().getLocation(
+                                  WeatherRouteParams(
+                                    city: city.name,
+                                    lat: city.lat,
+                                    lng: city.lng,
+                                    slug: city.slug,
+                                  ),
                                 ),
-                              ),
-                            ),
+                              );
+
+                              _focusNode.unfocus();
+                            },
                           );
                         },
                       );

@@ -14,6 +14,10 @@ main() {
 
     expect(find.byType(CardTile), findsNWidgets(4));
 
+    await tester.tap(find.byKey(const Key('search_city_text_field')));
+
+    await tester.pumpAndSettle();
+
     await tester.enterText(
         find.byKey(const Key('search_city_text_field')), 'São Paulo');
 
